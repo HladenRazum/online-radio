@@ -1,13 +1,140 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+    --headings-font: "Rajdhani", sans-serif;
+    --main-font: "Nunito", sans-serif;
+    --accent-color: rgb(4, 158, 144);
+    --red: rgb(233, 51, 51);
+}
+
+body {
+    background: #363636;
+    min-height: 100vh;
+    font-family: var(--main-font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--headings-font);
+}
+
+main {
+    padding: 50px 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* 
+  Audioplayer component styling (overwrite default styles)
+*/
+.rhap_container {
+    background-color: transparent !important;
+    border: 0;
+    box-shadow: none !important;
+    padding: 0 !important;
+    width: 60px !important;
+    align-self: flex-end !important;
+}
+
+.rhap_main,
+.rhap_stacked {
+    /* max-width: 140px; */
+    margin: 0 !important;
+    display: block;
+    flex: 0 !important;
+}
+
+.rhap_main-controls-button {
+    margin: 0 !important;
+}
+
+.rhap_stacked,
+.rhap_controls-section {
+    margin-top: 0 !important;
+    /* justify-content: flex-end; */
+}
+.rhap_play-pause-button {
+    font-size: 4rem !important;
+    width: 100% !important;
+    height: 100% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rhap_time,
+.rhap_progress-container,
+.rhap_additional-controls {
+    display: none !important;
+}
+
+.rhap_progress-section {
+    display: flex !important;
+    flex: 0 !important;
+    background-color: red;
+}
+
+.rhap_volume-container {
+    width: 120px;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+.rhap_volume-container svg {
+    fill: var(--red);
+    font-size: 1rem;
+    margin-bottom: 3px;
+}
+
+.rhap_volume-controls {
+    position: absolute;
+    right: 277px;
+    bottom: 10px;
+}
+
+@media all and (max-width: 400px) {
+    .rhap_volume-controls {
+        right: 237px;
+        bottom: 10px;
+    }
+}
+
+.rhap_main-controls {
+    /* margin-left: 1em; */
+    position: relative !important;
+}
+
+.rhap_play-pause-button svg {
+    fill: var(--accent-color);
+    font-size: 3.9rem;
+}
+
+.rhap_controls-section {
+    position: relative;
+}
+
+.rhap_volume-bar {
+    height: 3px !important;
+    width: 90% !important;
+    background-color: #eee !important;
+}
+
+.rhap_volume-indicator {
+    width: 9px !important;
+    height: 9px !important;
+    top: -3px !important;
+    background: var(--red) !important;
 }

@@ -1,0 +1,38 @@
+.filter {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+p {
+    margin-bottom: 0.5em;
+    font-size: 27px;
+    font-weight: bold;
+    color: #fff;
+}
+
+button {
+    cursor: pointer;
+}
+
+button,
+select {
+    padding: 0.5em 1em;
+    font-size: 17px;
+    margin: 0 0.2em;
+    text-transform: capitalize;
+    border-radius: 6px;
+    margin-bottom: 0.3em;
+}
+
+button.action {
+    background: var(--red);
+    color: #fff;
+    border: transparent;
+}

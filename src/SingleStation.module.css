@@ -1,0 +1,23 @@
+.single-station-item {
+    box-shadow: 1px 1px 6px rgba(179, 179, 179, 0.527);
+    border-radius: 0.3rem;
+    padding: 1em;
+    min-height: 200px;
+    background: rgb(255, 255, 255);
+}
+
+h3 {
+    margin-bottom: 0.3em;
+}
+
+.single-station-inner {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+@media all and (max-width: 400px) {
+    .single-station-item {
+        border-radius: 0;
+    }
+}

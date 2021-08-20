@@ -1,0 +1,16 @@
+.tag {
+    margin-right: 0.8em;
+    color: rgb(250, 2, 2);
+    line-height: 1;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: var(--headings-font);
+}
+
+ul {
+    display: flex;
+}
+
+h3 {
+    font-size: 1.7rem;
+}

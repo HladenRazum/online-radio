@@ -1,0 +1,21 @@
+.loader {
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 3.6rem;
+    color: #fff;
+}
+
+@media all and (max-width: 400px) {
+    h2 {
+        font-size: 2rem;
+    }
+}
