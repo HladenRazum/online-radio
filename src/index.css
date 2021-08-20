@@ -96,7 +96,7 @@ ul {
 .rhap_volume-container svg {
     fill: var(--red);
     font-size: 1rem;
-    margin-bottom: 3px;
+    /* margin-bottom: 3px; */
 }
 
 .rhap_volume-controls {
@@ -107,7 +107,7 @@ ul {
 
 @media all and (max-width: 400px) {
     .rhap_volume-controls {
-        right: 237px;
+        right: 236px;
         bottom: 10px;
     }
 }
