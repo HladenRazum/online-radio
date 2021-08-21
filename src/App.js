@@ -10,7 +10,6 @@ function App() {
     const [isLoading, setIsLoading] = useState(true);
     const [stations, setStations] = useState([]);
     const [error, setError] = useState(false);
-    const [isInfoMessageVisible, setIsInfoMessageVisible] = useState(true);
 
     useEffect(() => {
         setIsLoading(true);
@@ -45,7 +44,6 @@ function App() {
 
             setStations(stations);
             setIsLoading(false);
-            setIsInfoMessageVisible(false);
         } catch (error) {
             console.error(error);
             setError(true);
@@ -80,7 +78,6 @@ function App() {
 
             setStations(stations);
             setIsLoading(false);
-            setIsInfoMessageVisible(false);
         } catch (error) {
             console.error(error);
             setError(true);
@@ -114,7 +111,6 @@ function App() {
 
             setStations(stations);
             setIsLoading(false);
-            setIsInfoMessageVisible(false);
         } catch (error) {
             console.error(error);
             setError(true);
@@ -128,10 +124,7 @@ function App() {
 
             {isLoading && (
                 <main>
-                    <StationsFilter
-                        getAllStations={getAllStations}
-                        isInfoMessageVisible={isInfoMessageVisible}
-                    />
+                    <StationsFilter getAllStations={getAllStations} />
                     <Loader />
                 </main>
             )}
@@ -139,7 +132,6 @@ function App() {
             {!isLoading && (
                 <main>
                     <StationsFilter
-                        isInfoMessageVisible={isInfoMessageVisible}
                         getAllStations={getAllStations}
                         getStationsByLanguage={getStationsByLanguage}
                         getStationsByGenre={getStationsByGenre}
