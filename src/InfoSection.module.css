@@ -1,0 +1,26 @@
+.infosection {
+    background: rgb(131, 131, 136);
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 2em;
+    padding: 1em;
+    font-size: 1.2rem;
+}
+
+.infotext {
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 1em;
+}
+
+.link {
+    color: #cddc39;
+    font-weight: bold;
+}
+
+.closeBtn {
+    border: 0;
+    color: #0f3d10;
+    background: rgb(205, 213, 93);
+}

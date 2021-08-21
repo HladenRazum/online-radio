@@ -7,18 +7,6 @@ const StationsFilter = (props) => {
 
     return (
         <header className={styles.filter}>
-            {/* message informing the uers how to fixed mixed content error */}
-            <article>
-                <p className={styles.info}>
-                    To be able to use the app, you'll need to allow insecure
-                    content and reload the page.
-                </p>
-                <a href="https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/mixed-content.html?lang=en">
-                    See how to allow insecure content here.
-                </a>
-            </article>
-
-            <p>filters:</p>
             <div>
                 <button
                     className={styles.action}

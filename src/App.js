@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import Loader from "./Loader";
-import { RadioBrowserApi } from "radio-browser-api";
 import StationsFilter from "./StationsFilter";
 import Stations from "./Stations";
+import InfoSection from "./InfoSection";
+import { RadioBrowserApi } from "radio-browser-api";
 
 const STATIONS_LIMIT = 80;
 
@@ -10,6 +11,11 @@ function App() {
     const [isLoading, setIsLoading] = useState(true);
     const [stations, setStations] = useState([]);
     const [error, setError] = useState(false);
+    const [isVisibleInfoSection, setIsVisibleInfoSection] = useState(true);
+
+    const closeInfoSection = () => {
+        setIsVisibleInfoSection(false);
+    };
 
     useEffect(() => {
         setIsLoading(true);
@@ -124,6 +130,10 @@ function App() {
 
             {isLoading && (
                 <main>
+                    {isVisibleInfoSection && (
+                        <InfoSection closeInfoSection={closeInfoSection} />
+                    )}
+
                     <StationsFilter getAllStations={getAllStations} />
                     <Loader />
                 </main>
