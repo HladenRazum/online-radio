@@ -7,7 +7,8 @@
     justify-content: center;
     margin: 0 auto;
     padding: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 4em;
+    position: relative;
 }
 
 p {
@@ -35,4 +36,20 @@ button.action {
     background: var(--red);
     color: #fff;
     border: transparent;
+}
+
+/* article info */
+article {
+    margin-bottom: 1em;
+}
+
+.info {
+    font-size: 16px;
+    font-weight: lighter;
+    color: rgb(175, 175, 175);
+}
+
+a {
+    color: rgb(0, 195, 255);
+    font-size: 16px;
 }
