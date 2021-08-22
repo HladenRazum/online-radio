@@ -19,6 +19,7 @@ function App() {
     };
 
     useEffect(() => {
+        // handle info message displaying on the page
         const infoSectionItem = localStorage.getItem("infoSectionIsVisible");
         if (infoSectionItem === "0") {
             setIsVisibleInfoSection(false);
@@ -51,7 +52,6 @@ function App() {
 
                 return newStation;
             });
-            // console.log(stations);
 
             setStations(stations);
             setIsLoading(false);

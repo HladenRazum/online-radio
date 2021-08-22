@@ -1,26 +1,31 @@
 .infosection {
-    background: rgb(131, 131, 136);
+    background: #fee3cf;
     max-width: 600px;
     margin: 0 auto;
     margin-bottom: 2em;
     padding: 1em;
-    font-size: 1.2rem;
 }
 
 .infotext {
-    color: rgb(255, 255, 255);
+    color: #242729;
     font-weight: 400;
     text-align: left;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
 }
 
 .link {
-    color: #cddc39;
+    color: #f2720c;
     font-weight: bold;
+    margin: 0 0.3em;
 }
 
 .closeBtn {
     border: 0;
-    color: #0f3d10;
-    background: rgb(205, 213, 93);
+    color: #fff;
+    background: #f2720c;
+    font-size: 13px;
+}
+
+strong {
+    color: rgb(69, 199, 177);
 }

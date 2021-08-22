@@ -112,27 +112,6 @@ ul {
     }
 }
 
-/* Info section */
-
-.info {
-    font-weight: lighter;
-    color: rgb(175, 175, 175);
-    font-size: 1rem;
-}
-
-a {
-    color: rgb(0, 195, 255);
-}
-
-.closeBtn {
-    background: var(--red);
-    border: 0;
-    color: #fff;
-    margin-right: auto;
-    font-size: 1rem;
-    padding: 0.2em 0.4em;
-}
-
 .rhap_main-controls {
     /* margin-left: 1em; */
     position: relative !important;
