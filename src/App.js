@@ -14,10 +14,15 @@ function App() {
     const [isVisibleInfoSection, setIsVisibleInfoSection] = useState(true);
 
     const closeInfoSection = () => {
+        localStorage.setItem("infoSectionIsVisible", "0");
         setIsVisibleInfoSection(false);
     };
 
     useEffect(() => {
+        const infoSectionItem = localStorage.getItem("infoSectionIsVisible");
+        if (infoSectionItem === "0") {
+            setIsVisibleInfoSection(false);
+        }
         setIsLoading(true);
         getAllStations();
     }, []);
@@ -130,7 +135,7 @@ function App() {
 
             {isLoading && (
                 <main>
-                    {isVisibleInfoSection && (
+                    {stations && isVisibleInfoSection && (
                         <InfoSection closeInfoSection={closeInfoSection} />
                     )}
 
