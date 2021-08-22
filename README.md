@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Online Radio App build with React
 
 If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
@@ -35,3 +36,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+=======
+# Online Radio app built with React
+
+check the app here: https://online-radio-react.herokuapp.com/
+>>>>>>> c1b7b3228a480e08d4d8020768fbd664f3c9caef
