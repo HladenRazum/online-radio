@@ -135,7 +135,7 @@ function App() {
 
             {isLoading && (
                 <main>
-                    {stations && isVisibleInfoSection && (
+                    {!stations && isVisibleInfoSection && (
                         <InfoSection closeInfoSection={closeInfoSection} />
                     )}
 

@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300&display=swap");
 
 * {
     margin: 0;
@@ -8,8 +8,8 @@
 }
 
 :root {
-    --headings-font: "Rajdhani", sans-serif;
-    --main-font: "Nunito", sans-serif;
+    --headings-font: "Rajdhani", "Verdana", sans-serif;
+    --main-font: "Source Sans Pro", "Verdana", sans-serif;
     --accent-color: rgb(4, 158, 144);
     --red: rgb(233, 51, 51);
 }
